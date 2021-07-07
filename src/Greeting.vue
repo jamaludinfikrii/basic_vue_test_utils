@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <center>
-      <p>Input your name</p>
-      <input type="text" v-model="name">
-      <button @click="isBtnClicked=true">click</button>
-      <p v-if="isBtnClicked"> Welcome, {{name}} </p>
+      <p ref='labelInputRef'>Input your name</p>
+      <input ref="inputRef" type="text" v-model="name">
+      <button ref="buttonRef" @click="isBtnClicked=true">click</button>
+      <p ref='greetingRef' v-if="isBtnClicked"> Welcome, {{name}} </p>
     </center>
   </div>
 </template>

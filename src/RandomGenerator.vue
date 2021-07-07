@@ -2,9 +2,9 @@
   <div id="app">
     <center>
       <p>Generate Random Number</p>
-      <button @click="onClickHandler">Click Me !</button>
-      <p v-if="randomNumber">{{randomNumber}}</p>
-      <p v-if="randomNumber > 90">You got special number !!</p>
+      <button ref="buttonRef" @click="onClickHandler">Click Me !</button>
+      <p ref="randomNumberRef" v-if="randomNumber">{{randomNumber}}</p>
+      <p ref="messageRef" v-if="randomNumber > 90">You got special number !!</p>
     </center>
   </div>
 </template>
