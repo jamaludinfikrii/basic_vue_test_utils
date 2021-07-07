@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <center>
       <p ref='labelInputRef'>Input your name</p>
       <input ref="inputRef" type="text" v-model="name">
@@ -12,7 +12,7 @@
 <script>
 
 export default {
-  name: 'App',
+  name: 'Greeting',
   data(){
     return{
       name: '',
